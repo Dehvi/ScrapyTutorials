@@ -10,7 +10,7 @@ example link: http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.h
 The data we will get from the page is book title, price, upc, product type and availability. 
 
 ### Book title and price
-![[scrapy_book_title_and_price_html_code.png]]
+![[images/scrapy_book_title_and_price_html_code.png]]
 
 The book title is inside `<div class="col-sm-6 product_main">` and the price is just below that inside a `<p class="price_color">£53.74</p>`.
 
@@ -26,7 +26,7 @@ $ scrapy shell http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.
 Now we have the title and price from page nd next will be to get the data from product information table.
 
 ### Books product information table
-![[scrapy_getting_data_from_html_table_books.png]]
+![[images/scrapy_getting_data_from_html_table_books.png]]
 
 There is many ways to scrape data from a table and today I will use the simplest way to do it. Getting the `td` values in a list and picking the correct values using the correct index value.
 
